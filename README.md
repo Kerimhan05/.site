@@ -1,0 +1,2 @@
+# ramazanov.site
+LogoType
