@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/iconfonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -22,7 +23,7 @@
                     <div class="container">
                         <a class="header__tell icon-phone" href="tel:380963092145">+38 (096) 309 21 45</a>
                         <a class="header__email" href="mailto:layout585@gmail.com">layout585@gmail.com</a>
-                        <a class="header__btn icon-briefcase" href="#">Бесплатная консультация</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn icon-briefcase" href="#">Бесплатная консультация</a>
                     </div>
                 </div>
                 <div class="header__menu">
@@ -63,7 +64,7 @@
                                     предыдущей
                                     деятельности.
                                 </div>
-                                <div class="slider__btn default__btn">
+                                <div data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default__btn">
                                     Оставить заявку
                                 </div>
                             </div>
@@ -78,7 +79,7 @@
                                     предыдущей
                                     деятельности.
                                 </div>
-                                <div class="slider__btn default__btn">
+                                <div data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default__btn">
                                     Оставить заявку
                                 </div>
                             </div>
@@ -93,7 +94,7 @@
                                     предыдущей
                                     деятельности.
                                 </div>
-                                <div class="slider__btn default__btn">
+                                <div data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default__btn">
                                     Оставить заявку
                                 </div>
                             </div>
@@ -133,7 +134,7 @@
                             </div>
                             <div class="services__item-link">
                                 <a class="services__item-link-1" href="#">Подробнее</a>
-                                <div class="services__item-btn default__btn">
+                                <div data-fancybox data-src="#modal" href="javascript:;" class="services__item-btn default__btn">
                                     Заказать
                                 </div>
                             </div>
@@ -150,7 +151,7 @@
                                 конфиденциальности. </div>
                             <div class="services__item-link">
                                 <a class="services__item-link-1" href="#">Подробнее</a>
-                                <div class="services__item-btn default__btn">
+                                <div data-fancybox data-src="#modal" href="javascript:;" class="services__item-btn default__btn">
                                     Заказать
                                 </div>
                             </div>
@@ -166,7 +167,7 @@
                                 рисков; при оптимизации налогообложения. </div>
                             <div class="services__item-link">
                                 <a class="services__item-link-1" href="#">Подробнее</a>
-                                <div class="services__item-btn default__btn">
+                                <div data-fancybox data-src="#modal" href="javascript:;" class="services__item-btn default__btn">
                                     Заказать
                                 </div>
                             </div>
@@ -203,9 +204,9 @@
                     <div class="form__content">
                         <div class="form__inner">
                             <div class="form__top-box">
-                                <div class="form__top-title">
+                                <a data-fancybox data-src="#modal" href="javascript:;" class="form__top-title">
                                     Получить Консультацию
-                                </div>
+                                </a>
                                 <div class="form__top-text">
                                     Комплексный подход к вашему вопросу, своевременная правовую помощь, представление
                                     интересов
@@ -244,9 +245,9 @@
                                                 Сообщение
                                                 <textarea></textarea>
                                             </label>
-                                            <button type="submit" class="form__box-btn default__btn">
+                                            <a data-fancybox data-src="#modal" href="javascript:;" type="submit" class="form__box-btn default__btn">
                                                 Получить консультацию
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </form>
@@ -410,9 +411,9 @@
                                 Полное прекращение существования юридического лица с сохранением легальности всей
                                 предыдущей деятельности.
                             </div>
-                            <div class="information__btn icon-briefcase">
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="information__btn icon-briefcase">
                                 <a href="">Бесплатная консультация</a>
-                            </div>
+                            </a>
                             <div class="information__link">
                                 <a class="information__tell icon-phone" href="tel:38 (096) 309 21 45">+38 (096) 309 21 45</a>
                                 <a class="information__email icon-mail" href="mailto:layout585@gmail.com">layout585@gmail.com'</a>
@@ -435,8 +436,17 @@
             &copy;2017 Template by Ramazanov Kerimhan. Все права защищены.
         </footer>
     </div>
+        <div id="modal">
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш email">
+            <input type="text" placeholder="Ваш телефон">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
 
             <script src="js/jquery-3.6.0.min.js"></script>
+            <script src="js/jquery.fancybox.min.js"></script>
             <script src="js/slick.min.js"></script>
             <script src="js/main.js"></script>
 </body>
