@@ -793,16 +793,19 @@ address {
     line-height: 36px;
     color: #ffffff;
 }
-.information__map{
+
+.information__map {
     max-width: 630px;
     width: 100%;
 }
+
 .information__map iframe {
     width: 100%;
 }
 
 #modal {
     width: 500px;
+    display: none;
 }
 
 #modal input {
