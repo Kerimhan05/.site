@@ -298,6 +298,7 @@
 @media (min-width:320px) {
     .menu ul {
         margin-top: -10px;
+        z-index: 1;
     }
 
     .container {
@@ -305,3 +306,9 @@
     }
 
 }
+@media (min-width:700px){
+    .menu ul{
+        display: block !important;
+    }
+}
+
